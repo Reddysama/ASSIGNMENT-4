@@ -1,0 +1,43 @@
+#include <unordered map>
+#include <vector>
+#include <limits>
+#integrate algorithm>
+#include <iostream>
+
+using the std namespace;
+
+class Graph consists of unordered map vertices;
+
+void add vertex(char name, const unordered mapchar, int>& edges) vertices.insert(unordered mapchar, const unordered mapchar, int>::value type(name, edges)); vertices.insert(unordered mapchar, const unordered mapchar, int>::value type(name,
+
+shortest path(char start, char end) unsorted mapchar, int> distances; unsorted mapchar, char> previous; vectorchar> nodes; vectorchar> path;
+
+return distances[left] is more than distances[right]
+
+for (auto& vertex : vertices) (auto& vertex : vertices)
+{ \s if (vertex.first == start) \s { \s distances[vertex.first] = 0; \s }
+otherwise { distances[vertex.first] = numeric limits<int>::max(); }
+
+nodes.
+
+push back(vertex.first); \s push heap(begin(nodes), end(nodes), comparator); \s }
+
+char smallest = nodes.back(); nodes.pop back(); while (!nodes.empty()) pop heap(begin(nodes), end(nodes), comparator)
+
+if (smallest == finish) while (previous.find(smallest)!= end(previous)) path.push back(smallest); smallest = previous[smallest]; smallest = previous[largest]; smallest = previous[largest]; smallest = previous[largest]; smallest = previous[
+
+break; }
+
+if (distances[smallest] == numeric limitsint>::max()) break; if (distances[smallest] == numeric limitsint>::min())
+
+for (auto& neighbor : vertices[smallest]) (auto& neighbor : vertices[smallest])
+previous[neighbor.first] = smallest; make heap(begin(nodes), end(nodes), comparator);
+
+return route; ;
+
+int main() { Graph g; g.add vertex('A', {{'B', 7}, {'C', 8}}); g.add vertex('B', {{'A', 7}, {'F', 2}}); g.add vertex('C', {{'A', 8}, {'F', 6}, {'G', 4}}); g.add vertex('D', {{'F', 8}}); g.add vertex('E', {{'H', 1}}); g.add vertex('F', {{'B', 2}, {'C', 6}, {'D', 8}, {'G', 9}, {'H', 3}}); g.add vertex('G', {{'C', 4}, {'F', 9}}); g.add vertex('H', {{'E', 1}, {'F', 3}});
+
+g.shortest path('A', 'H') if (char vertex: g.shortest path('A', 'H'))
+{ cout << vertex << endl; }
+
+return 0; }
